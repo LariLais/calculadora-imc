@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora IMC</h1>
+      <div class="container_inputs">
+        <div class="inputs">
+          <div>
+            <label for="input_peso">PESO</label>
+            <input id="input_peso" type="number" />
+          </div>
+          <div>
+            <label for="input_altura">ALTURA</label>
+            <input id="input_altura" type="number" />
+          </div>
+        </div>
+        <div class="container_buttons">
+          <button id="btn_calcular">CALCULAR &rightarrow;</button>
+          <button id="btn_limpar">LIMPAR</button>
+        </div>
+      </div>
+      <div class="container_tabela">
+        <table>
+          <tr>
+            <th>IMC</th>
+            <th>CLASSIFICAÇÃO</th>
+            <th>OBESIDADE (GRAU)</th>
+          </tr>
+          <tr id="imc_magreza">
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr id="imc_normal">
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr id="imc_sobrepeso">
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+          </tr>
+          <tr id="imc_obesidade">
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+          </tr>
+          <tr id="imc_obesidade_grave">
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+          </tr>
+        </table>
+      </div>
+      <div class="resultado"></div>
+    </div>
+    <div class="background"></div>
+  </body>
+</html>
